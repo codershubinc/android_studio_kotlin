@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, secondScreen::class.java)
         startActivity(intent)
     }
+    fun goToApiFetch(view: View) {
+        val intent = Intent(this, ApiFetch::class.java)
+        startActivity(intent)
+    }
 
 
 }
