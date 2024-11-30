@@ -7,20 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/black"
-    android:onClick="helloWorldCount"
      >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World! once again"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:layout_width="185dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="376dp"
+        android:onClick="goToSecondScreen"
+        android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30dp"
-        android:id="@+id/hello_world_text"
-        android:onClick="helloWorldCount"
-        />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

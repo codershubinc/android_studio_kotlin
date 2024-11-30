@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LearningKotlinPrj1</string>
+    <string name="hello_world_once_again">Hello World! once again</string>
+    <string name="go_to_second_screen">Go to second screen</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_your_e_mail">Enter your e-mail</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="signup">Signup</string>
 </resources>
