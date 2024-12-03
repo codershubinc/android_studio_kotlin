@@ -1,6 +1,5 @@
 package com.example.kotlin_android_test_1
 
-import ApiFetchUtil
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -11,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
+import com.example.utils.ApiFetchUtil
 import com.example.utils.CoilUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -31,7 +31,9 @@ class ApiFetch : AppCompatActivity() {
 
     private suspend fun fetchAndDisplayUser() {
         val apiFetchUtil = ApiFetchUtil()
-        val user = apiFetchUtil.fetchUser()
+        val user = apiFetchUtil.fetchUser(
+            "https://openapihub.vercel.app/v0.1/"
+        )
 
 
         val userNameTextView = findViewById<TextView>(R.id.userName)
