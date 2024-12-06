@@ -1,4 +1,4 @@
-package com.codershubinc.apifetching
+package com.app.apifetching
 
 import org.junit.Test
 

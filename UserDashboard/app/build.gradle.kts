@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.codershubinc.apifetching"
+    namespace = "com.example.userdashboard"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.codershubinc.apifetching"
-        minSdk = 25
+        applicationId = "com.example.userdashboard"
+        minSdk = 28
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -36,13 +36,7 @@ android {
 }
 
 dependencies {
-//    dependencies for fetching api
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11")
-    // for image handling from uri
-    implementation ("io.coil-kt:coil:2.4.0")
-    implementation ("io.coil-kt:coil-svg:2.4.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,6 +45,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("androidx.wear.compose:compose-material:1.1.2")
-
 }

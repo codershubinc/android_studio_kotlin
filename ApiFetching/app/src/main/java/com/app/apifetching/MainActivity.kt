@@ -1,10 +1,16 @@
-package com.codershubinc.apifetching
-
+package com.app.apifetching
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import com.app.apifetching.util.RandomUser
+import com.codershubinc.apifetching.R
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,4 +23,23 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    @SuppressLint("SetTextI18n")
+    fun fetch(view: View) {
+lifecycleScope.launch {
+    try {
+        RandomUser().fetchUser (
+            "https://openapihub.vercel.app/v0.1/",
+            findViewById<TextView>(R.id.name)
+        )
+    }
+    catch (e:Exception){
+        findViewById<TextView>(R.id.name).text = "Error: ${e.message}"
+    }
+}
+
+
+    }
+
+
 }
