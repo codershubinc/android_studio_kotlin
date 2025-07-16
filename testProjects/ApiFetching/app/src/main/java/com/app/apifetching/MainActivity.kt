@@ -1,4 +1,5 @@
-package com.app.apifetching
+package com.codershubinc.apifetching // Corrected package
+
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
@@ -8,9 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.app.apifetching.util.RandomUser
+
 import com.codershubinc.apifetching.R
+import com.app.apifetching.util.RandomUser
 import kotlinx.coroutines.launch
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
