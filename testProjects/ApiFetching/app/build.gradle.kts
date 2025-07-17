@@ -41,7 +41,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11")
     // for image handling from uri
-    implementation ("io.coil-kt:coil:2.4.0")
     implementation ("io.coil-kt:coil-svg:2.4.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -52,5 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.wear.compose:compose-material:1.1.2")
+    implementation("io.coil-kt:coil-compose:2.4.0")
 
 }
